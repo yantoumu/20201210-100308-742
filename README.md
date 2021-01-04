@@ -56,7 +56,7 @@ post = {
     "os":"android",
     "client_key":"3c2cd3f3"
 }
-j = signature.WeChat_YY_yhzf.sig_post("https://apissl.ksapisrv.com/rest/n/feed/nearby",para,post)
+j = signature.sig_post("https://apissl.ksapisrv.com/rest/n/feed/nearby",para,post)
 header = {"Content-Type":"application/x-www-form-urlencoded"}
  
 resp = requests.post(j["para"], data=j["data"],headers=header)
